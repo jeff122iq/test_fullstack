@@ -1,0 +1,4 @@
+{
+  "PORT": 5000,
+  "MONGO_URL": "mongodb+srv://bogdan:159753qaz@cluster0.hel5m.mongodb.net/TodoList?retryWrites=true&w=majority"
+}
