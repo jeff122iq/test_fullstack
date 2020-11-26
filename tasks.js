@@ -1,14 +1,22 @@
-// const Schema = mongoose.Schema;
+const { request, response } = require("express");
+//====================== VARIABLES =========================
 
-// const config = require("config");
-
-// const mongoose = require("mongoose");
-
-// const taskSchema = new Schema({ task: String, email: String });
-
-// mongoose.connect(config.get("MONGO_URL"), {
-//   useNewUrlParser: true,
-//   useUnifiedTopology: true,
+const mongoose = require("mongoose");
+const Schema = mongoose.Schema;
+const taskSchema = new Schema({
+  task: String,
+  email: String,
+});
+const Task = mongoose.model("Task", taskSchema);
+// const task = new Task({
+//   task: `${response.task}`,
+//   email: `${response.email}`,
 // });
 
-// module.exports = taskSchema;
+//====================== VARIABLES =========================
+
+//======================= FUNCTIONS ========================
+
+module.exports = Task;
+
+//======================= FUNCTIONS ========================
