@@ -1,0 +1,27 @@
+.App {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.form {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  max-width: 500px;
+  padding: 10px 40px;
+  background-color: cornflowerblue;
+}
+
+.form > form > input {
+  outline: none;
+}
+
+.form > ul {
+  margin: 10px 0 0 0;
+  padding: 20px 0;
+  width: 100%;
+  background-color: white;
+}
